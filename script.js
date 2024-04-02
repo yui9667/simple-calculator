@@ -1,14 +1,14 @@
 const btn = document.getElementById("btn");
-const operation = document.getElementById("operation");
 const result = document.getElementById("result");
 
 function calculator() {
   const num1 = parseFloat(document.getElementById("number1").value);
   const num2 = parseFloat(document.getElementById("number2").value);
+  const operation = document.getElementById("operation").value;
   let res;
-  if (operation.value === "add") {
+  if (operation === "add") {
     res = num1 + num2;
-  } else if (operation.value === "sub") {
+  } else if (operation === "sub") {
     res = num1 - num2;
   }
 
